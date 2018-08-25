@@ -16,7 +16,7 @@ plot(hpcd$DateTime,hpcd$Voltage,type = "l", xlab="datetime", ylab = "Voltage(vol
 plot(hpcd$DateTime,hpcd$Sub_metering_1,type = "l", col = "black",xlab="", ylab = "Global Active Power(killowatts)")
 lines(hpcd$DateTime,hpcd$Sub_metering_2, col = "red")
 lines(hpcd$DateTime,hpcd$Sub_metering_3, col = "blue")
-legend("topright", col = c("black","red","blue"), lwd= c(1, 1, 1), c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", col = c("black","red","blue"), lwd= c(1, 1, 1), c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty = "n",cex = 0.75)
 plot(hpcd$DateTime, hpcd$Global_reactive_power, type = "l", col="black", xlab = "datetime", ylab = "Global Reactive Power(killowatts)")
 dev.copy(png,file = "plot4.png", width = 480, height = 480)
 dev.off()
